@@ -1,0 +1,34 @@
+.menu {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img_container {
+  width: 200px;
+}
+
+/* Gọi đến tất cả những thẻ img nằm trong class tên là img_contianer */
+.img_container img {
+  width: 100%;
+}
+
+.item_container {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+.three_line_icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .item_container {
+    display: none;
+  }
+
+  .three_line_icon {
+    display: block;
+  }
+}

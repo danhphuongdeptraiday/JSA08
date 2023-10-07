@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+.post_container {
+  width: 700px;
+  min-height: 200px;
+  /* border: 2px solid black; */
+  margin: 20px auto;
+}
+
+.post_container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.post_container textarea {
+  width: 100%;
+  padding: 15px;
+}
+
+.post_container #post_comment {
+  width: 100%;
+  padding: 10px;
+}
+
+.list_post_comment {
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid red;
+  padding: 20px;
+}
+
+/* Xử lý từng khối item */
+.item_comment {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.img_container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.img_container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content_container {
+  width: 75%;
+}
+
+.content_info_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_info_container .name {
+  color: blue;
+  margin-right: 30px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .input_container {
+        width: 300px;
+        padding: 15px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto;
+      }
+
+      .input_container input {
+        width: 80%;
+        padding: 10px;
+      }
+
+      .input_container button {
+        padding: 10px;
+      }
+
+      .notification {
+        width: 200px;
+        padding: 50px 20px;
+        background-color: rgb(123, 94, 56);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        display: none;
+      }
+
+      .container {
+        width: 200px;
+        height: 100px;
+        border: 2px solid black;
+        margin: 100px auto;
+        background-color: rgb(119, 219, 204);
+      }
+
+      .container .clock_container {
+        height: 60%;
+        display: flex;
+      }
+
+      .container .clock_container div {
+        width: 33%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      .container .button_container {
+        height: 40%;
+        width: 100%;
+        display: flex;
+      }
+
+      .container .button_container button {
+        border-style: none;
+        width: 50%;
+      }
+      .container .button_container button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+      .start {
+        background-color: rgb(92, 211, 92);
+      }
+
+      .pause {
+        background-color: rgb(202, 79, 79);
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/b25957ae4f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <div class="input_container">
+      <input type="text" />
+      <button id="show_alert">Show</button>
+    </div>
+
+    <div class="notification">
+      <h2>Thông báo</h2>
+      <h1 class="second">0</h1>
+    </div> -->
+
+    <div class="container">
+      <div class="clock_container">
+        <div class="hour">00</div>
+        <div class="minute">00</div>
+        <div class="second">00</div>
+      </div>
+      <div class="button_container">
+        <button class="start">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button class="pause">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

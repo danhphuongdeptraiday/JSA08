@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .notification {
+        width: 300px;
+        height: 150px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .container {
+        width: 300px;
+        min-height: 200px;
+        background-color: bisque;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      .container h2 {
+        text-align: center;
+      }
+
+      .item {
+        padding: 5px;
+        background-color: rgb(58, 179, 122);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .delete {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ôn lại DOM</h1>
+    <div class="notification">
+      Kêt quả ở đây sẽ hiện ra 1 là đúng rồi 2 là sai rồi dựa theo giá trị mình
+      nhập từ input
+    </div>
+    <input type="text" id="myInput" />
+    <button>Enter</button>
+    <br />
+    <button>Show notification</button>
+    <br />
+    <input type="text" placeholder="Enter new task" id="inputList" />
+    <button>Add</button>
+    <div class="container">
+      <h2>Noi dung vua nhap</h2>
+      <div class="item">
+        <p>1</p>
+        <p>Noi dung thu 1 vua nhap tu input</p>
+        <div class="delete" onclick="deleteItem(this)">X</div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
